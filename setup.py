@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
   name = 'go-vies',
-  packages = ['go-vies'],
+  py_modules = ['go-vies'],
   version = '1.0',
   description = 'VIES VAT Validation (like django-vies without Django dependencies)',
   author = 'Mirek Zvolsky',
