@@ -9,11 +9,11 @@
 ```python
 from django.utils.functional import cached_property
 ```
-_has no dependency, so was pasted to here from django source_
+^_has no dependency, so was pasted to here from django source_^
 ```python
 from django.utils.translation import ugettext
 ```
-_in VATIN._validate(), replaced with 1:1 "translation" MSG_TRANSLATE - can be customized_
+^_in VATIN._validate(), replaced with 1:1 "translation" MSG_TRANSLATE - can be customized_^
 
 It is good idea to update VIES_OPTIONS from current version of django-vies/vies/__init__.py.
 
