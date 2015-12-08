@@ -6,17 +6,19 @@
 
 - still requires these modules installed: retrying (easy action retry), suds (soap client)
 - django imports were replaced:
-```
+```python
 from django.utils.functional import cached_property
-``` has no dependency, so was pasted to here from django source
 ```
+_has no dependency, so was pasted to here from django source_
+```python
 from django.utils.translation import ugettext
-``` in VATIN._validate(), replaced with 1:1 "translation" MSG_TRANSLATE - can be customized
+```
+_in VATIN._validate(), replaced with 1:1 "translation" MSG_TRANSLATE - can be customized_
 
 It is good idea to update VIES_OPTIONS from current version of django-vies/vies/__init__.py.
 
 ### Usage:
-```
+```python
 import go_vies
 go_vies.MSG_TRANSLATE = catalog.ugettext
             # optional, your translation function to translate english messages to current locale
