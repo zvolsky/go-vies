@@ -1,23 +1,19 @@
 # go-vies
 ## Python library for VIES (European VAT validation service)
 
-- based on django-vies module but without Djan(go-) dependency
+- based on django-vies module https://github.com/codingjoe/django-vies but without Djan(go-) dependency
 - compared to django-vies: in single file, provides only the call of the service (returns validity and company info)
 
 - still requires these modules installed: retrying (easy action retry), suds (soap client)
 - django imports were replaced:
 ```
-from django.utils.functional import cached_property
+from django.utils.functional import cached_property``` has no dependency, so was pasted to here from django source
 ```
-has no dependency, so was pasted to here from django source
-```
-from django.utils.translation import ugettext
-```
-in VATIN._validate(), replaced with 1:1 "translation" MSG_TRANSLATE - can be customized
+from django.utils.translation import ugettext``` in VATIN._validate(), replaced with 1:1 "translation" MSG_TRANSLATE - can be customized
 
 It is good idea to update VIES_OPTIONS from current version of django-vies/vies/__init__.py.
 
-Usage:
+### Usage:
 ```
 import go_vies
 go_vies.MSG_TRANSLATE = catalog.ugettext
