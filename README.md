@@ -13,7 +13,7 @@ from django.utils.functional import cached_property
 ```python
 from django.utils.translation import ugettext
 ```
-<sup>_in VATIN._validate(), replaced with 1:1 "translation" MSG_TRANSLATE - can be customized_</sup>
+<sup>_in VATIN._validate(), replaced with MSG_TRANSLATE - default 1:1, can be customized_</sup>
 
 It is good idea to update VIES_OPTIONS from current version of django-vies/vies/__init__.py.
 

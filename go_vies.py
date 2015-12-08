@@ -8,7 +8,7 @@ still requires these modules installed: retrying (easy action retry), suds (soap
 django imports were replaced:
   from django.utils.functional import cached_property - has no dependency, so was pasted to here from django source
   from django.utils.translation import ugettext
-                        - in VATIN._validate(), replaced with 1:1 "translation" MSG_TRANSLATE - can be customized
+                        - in VATIN._validate(), replaced with MSG_TRANSLATE - default 1:1, can be customized
 
 It is good idea to update VIES_OPTIONS from current version of django-vies/vies/__init__.py.
 
