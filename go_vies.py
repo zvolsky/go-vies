@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
 
 """VIES (European VAT service) validation
-  based on django-vies module but without Djan(go-) dependency
+Fork of (PyPI) django-vies (MIT licensed). Django dependencies were replaced.
   compared to django-vies: in single file, provides only the call of the service (returns validity and company info)
+install_requires = ['suds-jurko >= 0.6', 'retrying >= 1.1.0']   # soap client, easy action retry
 
-still requires these modules installed: retrying (easy action retry), suds (soap client)
-django imports were replaced:
+replaced django imports:
   from django.utils.functional import cached_property - has no dependency, so was pasted to here from django source
   from django.utils.translation import ugettext
                         - in VATIN._validate(), replaced with MSG_TRANSLATE - default 1:1, can be customized
 
-It is good idea to update VIES_OPTIONS from current version of django-vies/vies/__init__.py.
+TODO: It is good idea sometimes update VIES_OPTIONS from current version of django-vies/vies/__init__.py.
 
 Usage:
   import go_vies

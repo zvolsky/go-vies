@@ -12,7 +12,6 @@ setup(
   keywords = ['vies', 'vat'],
   classifiers=[
       'Development Status :: 5 - Production/Stable',
-      'Environment :: Web Environment',
       'Topic :: Office/Business :: Financial :: Accounting',
       'Intended Audience :: Developers',
       'Intended Audience :: Financial and Insurance Industry',
